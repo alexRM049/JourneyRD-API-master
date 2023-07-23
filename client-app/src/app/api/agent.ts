@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios'
 import { Destiny } from '../models/destiny';
 import { User, UserFormValues } from '../models/user';
 
-axios.defaults.baseURL = 'http://localhost:5000/api';
+axios.defaults.baseURL = 'https://technotes-api.onrender.com';
 
 const responseBody = <T> (response: AxiosResponse<T>) => response.data;
 

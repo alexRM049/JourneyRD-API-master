@@ -7,6 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import { StoreContext, store } from './app/stores/store';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { routes } from './app/router/Routes';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools';
+
+if (process.env.NODE_ENV === 'production') disableReactDevTools()
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
